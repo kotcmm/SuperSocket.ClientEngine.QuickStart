@@ -1,0 +1,11 @@
+import "BackMessage.proto";
+import "CallMessage.proto";
+
+message DefeatMessage {
+  enum Type { CallMessage = 1; BackMessage = 2; }
+
+  required Type type = 1;
+
+  optional CallMessage callMessage = 2;
+  optional BackMessage backMessage = 3;
+}
