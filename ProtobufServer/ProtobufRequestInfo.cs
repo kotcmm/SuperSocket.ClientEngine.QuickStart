@@ -15,6 +15,6 @@ namespace ProtobufServer
 
         public DefeatMessage Body { get; private set; }
 
-        public string Key { get; }
+        public string Key { get; set; }
     }
 }
